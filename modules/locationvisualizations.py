@@ -44,8 +44,8 @@ def plot_proddist_boxplotlocations(df,locations,years,countries = None,methods =
             var_name="Years",
             value_name="Production"
         )
-        melted["Years"] = pd.to_numeric(melted["Years"], errors='coerce')  # Sayısal forma çevir
-        melted = melted.sort_values(by="Years")
+        #melted["Years"] = pd.to_numeric(melted["Years"], errors='coerce')  # Sayısal forma çevir
+        #melted = melted.sort_values(by="Years")
 
         fig = go.Figure(data=go.Heatmap(
             z=melted["Production"],
