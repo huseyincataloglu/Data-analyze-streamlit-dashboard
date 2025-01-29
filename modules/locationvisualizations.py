@@ -329,13 +329,13 @@ def plot_locandmethod(df,locations,years):
     if len(locations) > 0:
         df = df[df["Location"].isin(locations)]
         grouped = df.groupby(["Detail","Location"])[years].sum().sum(axis = 1).reset_index(name = "Production")
-        fig = px.sunburst(grouped,values="Production",path=["Detail","Location"],color="Detail",title="Total Production By Countries and Locations ")
+        fig = px.sunburst(grouped,values="Production",path=["Detail","Location"],color="Detail",title="Total Production By Methods and Locations ")
         fig.update_layout(
             height=600,  # Yüksekliği artır
             width=800,  # Genişliği artır
             font=dict(size=18),  # Genel font boyutunu büyüt
             title=dict(
-                text=f"Total Production By Countries and Locations ",
+                text=f"Total Production By Methods and Locations ",
                 font=dict(size=24, color="red"),
             )
         )
@@ -386,7 +386,7 @@ def plot_country_map(df,locations, years, countries=None, methods=None, species=
             width=800,  # Genişliği artır
             font=dict(size=18),  # Genel font boyutunu büyüt
             title=dict(
-                text=f"Total Production By Methods ans Locations ",
+                text=f"Total Production By Countries and Locations ",
                 font=dict(size=24, color="red"),
             )
         )
