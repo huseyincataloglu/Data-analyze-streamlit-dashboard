@@ -142,7 +142,7 @@ with cc2:
 
 
 
-
+df = clean_data(df)
 
 
 
@@ -209,4 +209,3 @@ with c1:
         st.image("assets/Arctic Sea.gif", caption="FAO Balıkçılık Bölgeleri Haritası", width=800)
 
 
-df = clean_data(df)
