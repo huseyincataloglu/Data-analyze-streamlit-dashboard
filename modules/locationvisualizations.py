@@ -54,21 +54,7 @@ def plot_proddist_boxplotlocations(df,locations,years,countries = None,methods =
             colorscale='Viridis'
         ))
 
-        fig.update_layout(
-            title="Production Distribution by Location and Year",
-            xaxis=dict(
-                title='Years',
-                titlefont=dict(color='red'),  # X ekseni başlık rengi
-                tickfont=dict(color='black')  # X ekseni işaretleme yazı rengi
-            ),
-            yaxis=dict(
-                title='Locations',
-                titlefont=dict(color='red'),  # Y ekseni başlık rengi
-                tickfont=dict(color='black')  # Y ekseni işaretleme yazı rengi
-            ),
-            height=600,
-            width=800
-        )
+        
         #i = 1
         #for specy in species:
         #melted1 = melted[melted["Species"] == specy]
