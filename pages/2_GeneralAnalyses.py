@@ -48,7 +48,7 @@ if choose ==  "Fishery Area":
                 st.write(f"**Yearly Statistics**")
                 st.dataframe(uo.get_yearly_statsOverview(df,years))
         with c2:
-            st.markdown("""<h2 style = 'text-align : center;'> Production Distributions</h3> """,unsafe_allow_html=True)
+            st.markdown("""<h2 style = 'text-align : center;'> Production Values Histogram</h3> """,unsafe_allow_html=True)
             st.write("-------")
             st.plotly_chart(oviz.plot_locationbox_allyears(df,years))
 
@@ -75,7 +75,7 @@ if choose ==  "Fishery Area":
                 st.write(f"**Yearly Statistics**")
                 st.dataframe(util.get_yearly_stats(df,"Location",location,years))
         with c2:
-            st.markdown("""<h2 style = 'text-align : center;'> Production Distributions</h3> """,unsafe_allow_html=True)
+            st.markdown("""<h2 style = 'text-align : center;'> Production Values Histogram</h3> """,unsafe_allow_html=True)
             st.write("-------")
             st.plotly_chart(viz.plot_locbox_allyears(df,years,location))
 
@@ -103,7 +103,7 @@ elif choose == "Countries":
             st.write(f"**Yearly Statistics**")
             st.dataframe(util.get_yearly_stats(df,"Country",country,years))
     with c2:
-        st.markdown("""<h2 style = 'text-align : center;'> Production Distributions</h3> """,unsafe_allow_html=True)
+        st.markdown("""<h2 style = 'text-align : center;'> Production Values Histogram</h3> """,unsafe_allow_html=True)
         st.write("-------")
         st.plotly_chart(viz.plot_countrybox_allyears(df,country,years))
 

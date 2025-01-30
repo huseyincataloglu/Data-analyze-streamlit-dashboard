@@ -17,7 +17,7 @@ st.markdown(
     """
     <h2 style="font-size:28px; text-align:left;">🌍 Welcome to the <strong style="color:red;">Country Analysis Page</strong>! 🌍</h2>
     <p style="font-size:20px; text-align:justify;">
-        This page offers powerful tools to explore and analyze fish production data across multiple countries, regions, and production methods. Here's what you can do:
+        This page offers powerful tools to explore and analyze fish production data across multiple countries, regions, and production methods.
     </p>
     """, unsafe_allow_html=True)
 st.divider()
